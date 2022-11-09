@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,300;1,500&display=swap');
+*{
+    box-sizing:  border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,0.7066176812521884) 0%, rgba(148,187,233,0.5889706224286589) 100%);
+
+}
+.container{
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: whitesmoke;
+}
+h2{
+    text-align: center;
+    margin: 0 0 20px;
+}
+.form{
+    padding: 30px 40px;
+}
+.form-contenet{
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+.form-contenet label{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+.form-contenet input{
+    border: 2px solid rgb(154, 138, 138);
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    outline: none;
+    padding: 10px;
+    font-size: 1rem;
+}
+.form-contenet input:focus{
+    border-color: rgba(0, 0, 0, 0.682);
+}
+.form-contenet.success input{
+    border-color: green;
+}
+.form-contenet.danger input{
+    border-color: red;
+}
+
+.form-contenet small{
+    position: absolute;
+    color: red;
+    visibility: hidden;
+}
+
+.form-contenet.danger small{
+    visibility: visible;
+}
+button{
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid rgb(182, 169, 169);
+    outline: none;
+    display: block;
+    font-size: 1rem;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 5px;
+    color: whitesmoke;
+    background-color: rgb(25, 147, 192);
+    transition: 0.4s all;
+}
+button:hover{
+    background-color: blue;
+}
+/* @mondalcodehub | November-2022 */
